@@ -1,0 +1,11 @@
+a=21
+b=10
+c=0
+result=a*b
+c=a+b
+print('result=a*b',result)
+print('c=a+b',c)
+a=10
+b=5
+c=a**b
+print("c=a**b",c)
