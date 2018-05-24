@@ -20,4 +20,7 @@ a=10
 b=5
 c=a//b
 print("7-c的值为:",c)
-
+a=12
+b=2
+c=3
+print('a/b+c=',a/b+c)

@@ -1,0 +1,11 @@
+#-*- coding=utf-8 -*-
+while True:
+    num=int(input('请输入你的真实体重:'))
+    if num>=180:
+        print('把你论斤卖，你或许能包养王思聪')
+    elif num>=130 and num<180:
+        print('你的体重，称不配承受')
+    elif num>=90 and num<130:
+        print('挤公交的时候，游刃有余')
+    else:
+        print('风一刮就没了')
