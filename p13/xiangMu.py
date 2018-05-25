@@ -1,4 +1,5 @@
 import XMKuangJia
+import naiCha
 import time
 XMKuangJia.service()
 
@@ -92,11 +93,11 @@ def takeaway():
 #____________________________________________________________
 def ziZhu():
     print('自助餐，每位60元，不限时间，尽情享用，只要你能吃，我们供你吃\n注意：吃撑概不负责')
-    p=input('请问有几位？')
+    p=int(input('请问有几位？'))
     u=60
     h=p*u
     print('您花费总金额为：%s元'% h)
-    t=int(input('请输入支付金额：')
+    t=int(input('请输入支付金额：'))
     while t < h:
         print('小本生意，请多照顾')
         t=int(input('请再次支付：'))
@@ -104,12 +105,33 @@ def ziZhu():
     if y>0:
         print('找零 %d元，您请进，祝您用餐愉快'% y)
         time.sleep(2)
-        break
-    else y==0:
+    elif y==0:
         print('支付成功，请进，祝您用餐愉快')
         time.sleep(2)
-        break
 #_____________________________________________________________________
+def BBQ():
+    print('欢迎来到客满堂餐厅')
+    print('自助烧烤，各种材料已准备好，万事具备，只差您来')
+    print('出租烧烤架 120元  ')
+    print('优质炭     100元  ')
+    print('烤翅       60元  ')
+    print('羊肉串     60元  ')
+    print('鱿鱼       60元  ')
+    print('土豆、青菜、豆皮、香菇、玉米、蜂蜜、烤酱、各种必备调料 100元  ')
+    s=500
+    print('您花费总金额为：%s元'% s)
+    t=int(input('请输入支付金额：'))
+    while t < s:
+        print('小本生意，请多照顾')
+        t=int(input('请再次支付：'))
+    y=t-s
+    if y>0:
+        print('找零 %d元，请让我们专人带您们去烧烤地点，也可自选地点，祝您这一天玩的开心^-^'% y)
+        time.sleep(2)
+    elif y==0:
+        print('支付成功，请让我们专人带您们去烧烤地点，也可自选地点，祝您这一天玩的开心^-^')
+        time.sleep(2)
+#______________________________________________________________________________________________________
 
 a=int(input('请选择您要的操作：'))#输入您要的操作
 if a==1:#判断输入操作应对应的选项
@@ -145,6 +167,11 @@ if a==1:#判断输入操作应对应的选项
                 else:
                     print('恭喜，特等奖，茶杯一个')
                     t=int(input('请输入支付金额'))
+                    if t==000:
+                        naiCha.fuo()
+                        print('开个玩笑')
+                    else:
+                        print('')
                 while t<s:
                     print('小本生意，请多照顾')
                     t=int(input('请再次支付：'))
@@ -165,7 +192,7 @@ elif a==3:
 elif a==4:
     ziZhu()
 elif a==5:
-    print('维修中，敬请期待^-^')
+    BBQ()
 elif a==6:
     print('很遗憾，感谢您进入我们餐厅,再见^-^')
     time.sleep(2)
