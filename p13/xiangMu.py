@@ -183,7 +183,8 @@ if a==1:#判断输入操作应对应的选项
                     print('支付成功，欢迎下次光临')
                     break
                 #return y
-        elif n=='e':
+
+     elif n=='e':
             break
 elif a==2:
     artificial()

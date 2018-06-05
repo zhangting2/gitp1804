@@ -7,7 +7,6 @@ def service():
     print('5.结帐')
     print('6.退出')
     print('*'*33)
-service()
 def fuo():
     print ("                            _ooOoo_  ")
 
