@@ -1,7 +1,7 @@
 t=open('shi.c','w+')
 t.write('早发白帝城\n招辞白帝彩云间，\n千里江陵一日还。\n两岸猿声啼不住，\n轻舟一过万重山。\n')
 t.close()
-
+#-----------------------------------------------------
 t=open('shi.c','r')
 c=t.readlines()
 print(c)
@@ -14,7 +14,7 @@ c=t.readline()
 t=open('shi.c','a')
 t.write('*')
 t.close()
-
+#-----------------------------------------------------
 print('文件名是：%s'% t.name)
 print('文件是否关闭：%s' % t.closed)
 print('文件打开模式是：%s'% t.mode)
@@ -22,5 +22,5 @@ t1=open('shi.c','r')
 str=t1.read(3)
 print('读取的数据是：',str)
 position=t1.tell()
-print('当前位置是'，position)
+print('当前位置是',position)
 t1.close()

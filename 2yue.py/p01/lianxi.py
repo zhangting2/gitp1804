@@ -1,9 +1,6 @@
 f=open('hao.txt','w')
 f.write('哈\n')
-
 f.close()
-
-
 
 f=open('hao.txt','a+')
 f.write('hehehe\n')
